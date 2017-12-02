@@ -74,3 +74,6 @@ import { FormsModule } from '@angular/forms';
 자바스크립트에서는 DI개념이 없엇는데 TS에 오면서 생겼다
 Dependency Injection
 InversifyJS
+
+
+## 변경 감시전략을 어떻게 할 것인가..?
