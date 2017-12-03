@@ -32,7 +32,11 @@ import { BComponent } from './b/b.component';
     FormsModule
   ],
   providers: [
-    OneService
+    OneService,
+    {
+      provide: 'apiUrl',
+      useValue: 'https://api.github.com'
+    }
   ],
   bootstrap: [AppComponent]
 })

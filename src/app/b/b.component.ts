@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { OneService } from 'app/one.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { OneService } from 'app/one.service';
 })
 export class BComponent implements OnInit {
 
-  constructor(private one:OneService) {
+  constructor(private one: OneService) {
     console.log(one.name + ' B');
    }
 
