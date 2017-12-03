@@ -13,6 +13,7 @@ import { ChildComponent } from './child/child.component';
 import { OneService } from 'app/one.service';
 import { AComponent } from './a/a.component';
 import { BComponent } from './b/b.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { BComponent } from './b/b.component';
     ParentComponent,
     ChildComponent,
     AComponent,
-    BComponent
+    BComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
