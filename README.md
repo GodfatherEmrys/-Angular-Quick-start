@@ -28,16 +28,19 @@ Before running the tests make sure you are serving the app via `ng serve`.
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ## Node version Manager
+
  - n
  - nvm
  - nvs
 
 ## NVM
+
 ```
 nvm alias default 8.9.0
 ```
 
 ## VSCODE
+
 -code shell path
 code [DIRPATH]
 
@@ -54,11 +57,13 @@ ng generate component  sample1 --inline-template --inline-style
 ng g c -it -s
 
 ## COMPONENT
+
 콤포넌트에 뭔가를 달아서 보내주는 것 데이터를 주고 받고 하기
 똑똑콤 : 데이터를 다루는 콤 스마트 컴퍼넌트
 바보콤 : 데이터만 중재 프레젠테이션 컴퍼넌트
 
 ## ngModel
+
 FORMSMODULE
 FormsModule을 임포트해서 넣어줘야함
 import { FormsModule } from '@angular/forms';
@@ -66,20 +71,40 @@ import { FormsModule } from '@angular/forms';
     FormsModule
   ],
 
-## ZEST? React 테스트 도구
+### ZEST? React 테스트 도구
 
-## JASMIN KARMA angular 테스트 도구
+### JASMIN KARMA angular 테스트 도구
 
-## DI
+### DI
+
 자바스크립트에서는 DI개념이 없엇는데 TS에 오면서 생겼다
 Dependency Injection
 InversifyJS
 
-## 변경 감시전략을 어떻게 할 것인가..?
+### 변경 감시전략
 
 
-## HOC를 사용하고 상속형식은 잘 하지 않는다..
+### HOC를 사용하고 상속형식은 잘 하지 않는다..
+
 <A B=B></A>
 컴퍼지션 방식으로..
 
-async awake
+async await & observable
+
+### 서비스
+
+공유할 필요가 있을 때는 서비스를 사용하기도 하고.. 각자에 넣어서 사용하기도 한다...
+
+### 서비스가 뭔데?
+
+컴포넌트 뷰를 위한 모델..
+
+서비스 : 컴포넌트는 공통적인 로직이나 함수들의 모임, 별도로 빼놓는 기능 - DI가 필요함
+
+A 콤포넌트에 S 서비스를 주입한다는 의미라고 볼 수 있다
+객체를 미리 만들어서 주입해서 사용하는 방식
+
+control 인벌젼? 타 컴포넌트에서 사용할 엔지를 주입 .. ? 제어의 역전
+dependency injector 
+
+설정하는 방식은 같으나, 설정하는 위치가 다름 
