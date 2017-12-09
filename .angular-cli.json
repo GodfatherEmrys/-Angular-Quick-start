@@ -17,7 +17,7 @@
       "test": "test.ts",
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
-      "prefix": "emrys",
+      "prefix": "app",
       "styles": [
         "styles.css"
       ],

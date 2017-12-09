@@ -1,6 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <emrys-grand></emrys-grand>
-  <emrys-a></emrys-a>
-  <emrys-b></emrys-b>
+    <nav>
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Main</a>
+        <a routerLink="/board" routerLinkActive="active">Board</a>
+        <a routerLink="/guest" routerLinkActive="active">Guest</a>
+        <a routerLink="/about" routerLinkActive="active">About</a>
+      </nav>
+  <router-outlet></router-outlet>
 </div>

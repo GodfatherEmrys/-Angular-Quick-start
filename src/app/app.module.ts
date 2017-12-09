@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { TestComponent } from './test.component';
@@ -14,6 +15,17 @@ import { OneService } from 'app/one.service';
 import { AComponent } from './a/a.component';
 import { BComponent } from './b/b.component';
 import { LoginComponent } from './login/login.component';
+import { MainComponent } from './main/main.component';
+import { BoardComponent } from './board/board.component';
+import { GuestComponent } from './guest/guest.component';
+import { AboutComponent } from './about/about.component';
+
+const routes = [
+  { pathMatch: 'full', path: '', component: MainComponent },
+  { pathMatch: 'full', path: 'board', component: BoardComponent },
+  { pathMatch: 'full', path: 'guest', component: GuestComponent },
+  { pathMatch: 'full', path: 'about', component: AboutComponent }
+];
 
 @NgModule({
   declarations: [
@@ -27,11 +39,16 @@ import { LoginComponent } from './login/login.component';
     ChildComponent,
     AComponent,
     BComponent,
-    LoginComponent
+    LoginComponent,
+    MainComponent,
+    BoardComponent,
+    GuestComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [
     OneService,

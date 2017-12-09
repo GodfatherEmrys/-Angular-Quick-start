@@ -7,7 +7,7 @@ import { OneService } from 'app/one.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = '세상을 파멸시키는 개벽의 문';
+  title = '천지를 괴리시키는 개벽의 별';
   names = [
     '길가메쉬',
     '아르토리아',
